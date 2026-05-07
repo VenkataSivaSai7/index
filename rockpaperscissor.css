@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+h2 {
+    background-color: #081b31;
+    color: white;
+    line-height: 5rem;
+    height: 5rem;
+}
+
+.choices {
+    margin-top: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    gap: 3rem;
+}
+
+.choice {
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.choice:hover {
+    opacity: 0.7;
+    /* transition: 1s; */
+    border: 5px solid black;
+    /* display: flex; */
+    /* border: 3px solid black; */
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    gap: 3rem;
+}
+
+#you, #computer {
+    font-size: 4rem;
+}
+
+.msg-container {
+    margin-top: 3rem;
+}
+
+#msg {
+    background-color: #081b31;
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+/* media queries */
+
+@media (max-width: 479px) {
+
+    h2 {
+        font-size: 1.2rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+
+    .choices {
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .choice {
+        height: 85px;
+        width: 85px;
+    }
+
+    img {
+        height: 85px;
+        width: 85px;
+    }
+
+    .score-board {
+        flex-direction: column;
+        gap: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    #you,
+    #computer {
+        font-size: 2rem;
+    }
+
+    #msg {
+        font-size: 1rem;
+        padding: 0.7rem;
+        margin: 0 1rem;
+    }
+}
+
+/* max width */
+
+@media (min-width: 480px) and (max-width: 768px) {
+
+    h2 {
+        font-size: 1.5rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+
+    .choices {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .choice {
+        height: 110px;
+        width: 110px;
+    }
+
+    img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .score-board {
+        font-size: 1.5rem;
+    }
+
+    #you,
+    #computer {
+        font-size: 2.8rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+    }
+}
+
+
